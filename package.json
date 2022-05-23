@@ -27,7 +27,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:lib && npm run build:dist",
-    "build:lib": "react-build-lib",
+    "build:lib": "babel src --out-dir lib --presets react,latest,stage-3 --copy-files",
     "build:dist": "react-build-dist --bundle-name react-bubble-chart-d3.js"
   },
   "devDependencies": {
